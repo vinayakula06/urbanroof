@@ -84,11 +84,17 @@ st.markdown("""
 # ── Sidebar: API key ──────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("### ⚙️ Configuration")
+    # Read from Streamlit secrets (cloud) → env var → empty
+    _default_key = (
+        st.secrets.get("HF_TOKEN", "")
+        if hasattr(st, "secrets") else ""
+    ) or os.environ.get("HF_TOKEN", "") or os.environ.get("HUGGINGFACEHUB_API_TOKEN", "")
+
     api_key = st.text_input(
         "Hugging Face API Token",
         type="password",
         help="Use a Hugging Face token like hf_...",
-        value=os.environ.get("HF_TOKEN", "") or os.environ.get("HUGGINGFACEHUB_API_TOKEN", "")
+        value=_default_key
     )
     st.caption("Your key is not stored anywhere.")
 

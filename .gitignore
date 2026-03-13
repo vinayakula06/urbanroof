@@ -8,8 +8,8 @@ __pycache__/
 *.py[cod]
 *.pyo
 
-# Streamlit
-.streamlit/
+# Streamlit secrets (never commit API keys!)
+.streamlit/secrets.toml
 
 # OS
 .DS_Store
