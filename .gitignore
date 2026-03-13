@@ -1,0 +1,25 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# Generated PDFs
+DDR_*.pdf
+test_*.pdf
+
+# IDE
+.vscode/
+.idea/
