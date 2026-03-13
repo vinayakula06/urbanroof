@@ -3,7 +3,7 @@
 An AI-powered system that converts property inspection + thermal PDF documents into a structured, client-ready **Detailed Diagnostic Report (DDR)** — complete with embedded images and professional formatting.
 
 ## Live Demo
-🌐 **[Live App →](https://urbanroof.streamlit.app)**  
+🌐 **[Live App →](https://urbanroof-9vi2vlj4txpk4uw7ys8ne5.streamlit.app/)**  
 📁 **[GitHub Repo →](https://github.com/vinayakula06/urbanroof)**
 
 ---
